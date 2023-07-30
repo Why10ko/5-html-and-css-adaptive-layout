@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato' sans-serif;
+}
+
+.top-bar {
+  background-color: #222;
+  height: 74px;
+  
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 16px;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+      padding: 18px 32px;
+    }
+
+    @media (min-width: 1300px) {
+      width: 1139px;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .topBarSearch {
+      margin-left: 35px;
+    }
+
+    .navBarMenu {
+      margin-top: 7px;
+    }
+
+    .nav-bar-right {
+
+
+      @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+      }
+
+      .navBarAccount {
+        margin-right: 42px;
+        margin-left: 24px;
+        padding-top: 5px;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        @media (min-width: 1300px) {
+          margin-right: 40px;
+          margin-left: 25px;
+        }
+      }
+
+      .cardWrap {
+        position: relative;
+        width: 41;
+        height: 37px;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        img {
+          width: 32px;
+          height: 29px;
+          padding-top: 7px;
+          padding-right: 10px;
+        }
+      }
+
+      .count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 19px;
+        height: 19px;
+        color: white;
+        background-color: #F16D7F;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: -2px;
+        font-size: 12px;
+      }
+
+    }
+
+  }
+}
+
+
+.background-pinck{
+  background-color: #F8F3F4;
+}
+
+.registration {
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+
+  @media (min-width: 1300px) {
+    width: 1139px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    justify-content: start;
+    padding-left: 16px;
+  }
+
+  .header-registration {
+    color: #F16D7F;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;   
+    font-style: normal; 
+  }
+}
+
+.input-container {
+ padding: 26px 8px;
+
+ .nameLogin-container{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 31px;
+
+   p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 18px;
+   }
+
+   .first-name-email {
+    margin-bottom: 20px;
+    height: 39px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-left: 14px;
+   }
+
+   .last-name-password {
+    height: 39px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-left: 14px;
+   }
+ }
+
+ .sex-choice { 
+  display: flex;
+  align-items: center;
+  padding-left: 1px; 
+  width: 137px;
+  justify-content: space-between;
+  margin-bottom: 19px;
+
+
+  input{
+    width: 17px;
+    height: 17px;
+    margin-left: 1px;
+    box-sizing: border-box;
+    margin: 0;
+    
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+  }
+ }
+
+ .text-over-button{
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: -15px;
+  margin-bottom: 38px;
+ }
+
+ button {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  color: #FFFFFF;
+
+  span {
+    margin-left: 27px;
+    width: 5px;
+  }
+ }
+}
+
+.loyalty-contayner {
+  padding-left: 8px;
+  padding-right: 8px;
+
+  h3, p, ul {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  & > p {
+    margin-top: 31px;
+  }
+
+  .b-list {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    
+
+    div::before {
+      
+      content: url(../img/Vector.svg);
+      margin-right: 20px;
+    }
+
+    
+  }
+}
